@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="facebook-domain-verification" content="9plvc8qvj8xru0jnb8hxnv10xfqn8w" />
-  <title>Elisalde Hnos - Servicios Profesionales</title>
+  <meta name="facebook-domain-verification" content="xzsnvnaxzpbc12rys76mpdbozu124j" />
+  <title>Elisalde Hnos - Servicios Eléctricos Profesionales</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;600;700;800;900&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Oswald:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
     
-    .poppins {
-      font-family: 'Poppins', sans-serif;
+    .oswald {
+      font-family: 'Oswald', sans-serif;
     }
 
-    .fredoka {
-      font-family: 'Fredoka', sans-serif;
+    .montserrat {
+      font-family: 'Montserrat', sans-serif;
     }
 
-    /* Elisalde Hnos Blue/Teal Theme */
-    .shine-bg {
-      background: linear-gradient(135deg, #0EA5E9 0%, #22D3EE 25%, #67E8F9 50%, #BAE6FD 75%, #ECFEFF 100%);
+    /* Nueva paleta de colores - Rojo/Naranja */
+    .fire-gradient {
+      background: linear-gradient(135deg, #DC2626 0%, #EA580C 25%, #F97316 50%, #FB923C 75%, #FED7AA 100%);
       position: relative;
       overflow: hidden;
     }
     
-    .shine-bg::before {
+    .fire-gradient::before {
       content: '';
       position: absolute;
       top: 0;
@@ -37,29 +37,29 @@
       right: 0;
       bottom: 0;
       background-image: 
-        radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 80%, rgba(103, 232, 249, 0.2) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(249, 115, 22, 0.2) 0%, transparent 50%);
       opacity: 0.8;
       z-index: 1;
     }
     
-    .shine-content {
+    .fire-content {
       position: relative;
       z-index: 2;
     }
     
-    /* Blue/Teal color scheme */
-    .text-purple {
-      color: #0EA5E9; /* repurposed */
+    /* Colores del tema */
+    .text-fire-red {
+      color: #DC2626;
     }
     
-    .text-light-purple {
-      color: #22D3EE; /* repurposed */
+    .text-fire-orange {
+      color: #EA580C;
     }
     
-    .text-pink {
-      color: #14B8A6; /* repurposed */
+    .text-fire-yellow {
+      color: #F97316;
     }
     
     .text-white-title {
@@ -67,70 +67,70 @@
       font-weight: 900;
     }
 
-    /* Modern cards with sparkle effect */
-    .shine-card {
-      background: linear-gradient(145deg, rgba(14, 165, 233, 0.9), rgba(34, 211, 238, 0.2));
-      border: 2px solid #0EA5E9;
+    /* Tarjetas con efecto de fuego */
+    .fire-card {
+      background: linear-gradient(145deg, rgba(220, 38, 38, 0.9), rgba(234, 88, 12, 0.2));
+      border: 2px solid #DC2626;
       backdrop-filter: blur(20px);
       box-shadow: 
-        0 0 30px rgba(14, 165, 233, 0.3),
-        inset 0 0 30px rgba(14, 165, 233, 0.1);
+        0 0 30px rgba(220, 38, 38, 0.3),
+        inset 0 0 30px rgba(220, 38, 38, 0.1);
       transition: all 0.4s ease;
       position: relative;
       overflow: hidden;
     }
     
-    .shine-card::before {
+    .fire-card::before {
       content: '';
       position: absolute;
       top: -2px;
       left: -2px;
       right: -2px;
       bottom: -2px;
-      background: linear-gradient(45deg, #0EA5E9, #22D3EE, #14B8A6, #0EA5E9);
+      background: linear-gradient(45deg, #DC2626, #EA580C, #F97316, #DC2626);
       background-size: 400% 400%;
-      animation: sparkleGlow 3s ease infinite;
+      animation: fireGlow 3s ease infinite;
       z-index: -1;
       border-radius: inherit;
     }
     
-    .shine-card:hover {
+    .fire-card:hover {
       transform: translateY(-15px) scale(1.03);
       box-shadow: 
-        0 25px 50px rgba(14, 165, 233, 0.4),
-        0 0 40px rgba(34, 211, 238, 0.3);
-      border-color: #22D3EE;
+        0 25px 50px rgba(220, 38, 38, 0.4),
+        0 0 40px rgba(234, 88, 12, 0.3);
+      border-color: #EA580C;
     }
 
-    @keyframes sparkleGlow {
+    @keyframes fireGlow {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
-    /* Sparkle icons */
-    .shine-icon {
+    /* Iconos de fuego */
+    .fire-icon {
       width: 70px;
       height: 70px;
-      background: linear-gradient(45deg, #0EA5E9, #22D3EE);
+      background: linear-gradient(45deg, #DC2626, #EA580C);
       border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
-      box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+      box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
     }
 
-    /* Fun grid pattern */
-    .sparkle-bg {
+    /* Patrón de fondo diferente */
+    .flame-bg {
       background-image: 
-        linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px),
-        linear-gradient(0deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px);
-      background-size: 40px 40px;
+        linear-gradient(90deg, rgba(220, 38, 38, 0.1) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(220, 38, 38, 0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
       position: relative;
     }
     
-    .sparkle-bg::after {
+    .flame-bg::after {
       content: '';
       position: absolute;
       top: 0;
@@ -138,53 +138,53 @@
       right: 0;
       bottom: 0;
       background: 
-        radial-gradient(circle at 25% 25%, rgba(34, 211, 238, 0.2) 2px, transparent 2px),
-        radial-gradient(circle at 75% 75%, rgba(14, 165, 233, 0.2) 2px, transparent 2px);
-      background-size: 40px 40px;
+        radial-gradient(circle at 25% 25%, rgba(234, 88, 12, 0.2) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(220, 38, 38, 0.2) 2px, transparent 2px);
+      background-size: 50px 50px;
     }
 
-    /* Bouncy animations */
-    .bounce-animation {
-      animation: bounce 2s ease-in-out infinite;
+    /* Animaciones diferentes */
+    .flame-animation {
+      animation: flame 2s ease-in-out infinite;
     }
     
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
+    @keyframes flame {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-15px) scale(1.05); }
     }
 
-    /* Sparkle pulse */
-    .pulse-purple {
-      animation: pulseSparkle 2s ease-in-out infinite;
+    /* Efecto de pulso de fuego */
+    .pulse-fire {
+      animation: pulseFire 2s ease-in-out infinite;
     }
     
-    @keyframes pulseSparkle {
+    @keyframes pulseFire {
       0%, 100% { 
-        box-shadow: 0 0 20px #0EA5E9, 0 0 40px #0EA5E9;
-        border-color: #0EA5E9;
+        box-shadow: 0 0 20px #DC2626, 0 0 40px #DC2626;
+        border-color: #DC2626;
       }
       50% { 
-        box-shadow: 0 0 30px #22D3EE, 0 0 60px #22D3EE;
-        border-color: #22D3EE;
+        box-shadow: 0 0 30px #EA580C, 0 0 60px #EA580C;
+        border-color: #EA580C;
       }
     }
 
-    /* Fun panels */
-    .fun-panel {
-      background: linear-gradient(135deg, rgba(14, 165, 233, 0.8) 0%, rgba(34, 211, 238, 0.3) 100%);
-      border-left: 4px solid #0EA5E9;
+    /* Paneles con efecto de llama */
+    .flame-panel {
+      background: linear-gradient(135deg, rgba(220, 38, 38, 0.8) 0%, rgba(234, 88, 12, 0.3) 100%);
+      border-left: 4px solid #DC2626;
       backdrop-filter: blur(10px);
       transition: all 0.3s ease;
     }
     
-    .fun-panel:hover {
-      transform: translateX(10px) rotate(1deg);
-      border-left-color: #22D3EE;
-      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
+    .flame-panel:hover {
+      transform: translateX(10px) rotate(-1deg);
+      border-left-color: #EA580C;
+      box-shadow: 0 10px 30px rgba(220, 38, 38, 0.2);
     }
 
-    /* Rainbow wave effect */
-    .rainbow-wave {
+    /* Efecto de ondas de fuego */
+    .fire-wave {
       position: absolute;
       top: 0;
       left: 0;
@@ -194,53 +194,53 @@
         90deg,
         transparent,
         transparent 98px,
-        rgba(14, 165, 233, 0.05) 100px
+        rgba(220, 38, 38, 0.05) 100px
       );
-      animation: rainbowFlow 15s linear infinite;
+      animation: fireFlow 12s linear infinite;
     }
     
-    @keyframes rainbowFlow {
+    @keyframes fireFlow {
       0% { transform: translateX(-100%); }
       100% { transform: translateX(100%); }
     }
 
-    /* Custom scrollbar */
+    /* Scrollbar personalizado */
     ::-webkit-scrollbar {
-      width: 10px;
+      width: 12px;
     }
     
     ::-webkit-scrollbar-track {
-      background: #0EA5E9;
+      background: #DC2626;
     }
     
     ::-webkit-scrollbar-thumb {
-      background: linear-gradient(to bottom, #0EA5E9, #22D3EE);
-      border-radius: 5px;
+      background: linear-gradient(to bottom, #DC2626, #EA580C);
+      border-radius: 6px;
     }
 
-    /* WhatsApp button with sparkle */
-    .whatsapp-sparkle {
-      background: linear-gradient(135deg, #25d366, #128c7e, #0EA5E9);
-      animation: sparklePulse 2s infinite;
-      border: 2px solid #0EA5E9;
-      box-shadow: 0 0 25px rgba(14, 165, 233, 0.5);
+    /* Botón de WhatsApp con efecto de fuego */
+    .whatsapp-fire {
+      background: linear-gradient(135deg, #25d366, #128c7e, #DC2626);
+      animation: firePulse 2s infinite;
+      border: 2px solid #DC2626;
+      box-shadow: 0 0 25px rgba(220, 38, 38, 0.5);
     }
     
-    @keyframes sparklePulse {
+    @keyframes firePulse {
       0%, 100% {
         transform: scale(1);
-        box-shadow: 0 0 25px rgba(14, 165, 233, 0.5);
+        box-shadow: 0 0 25px rgba(220, 38, 38, 0.5);
       }
       50% {
         transform: scale(1.05);
-        box-shadow: 0 0 35px rgba(34, 211, 238, 0.7);
+        box-shadow: 0 0 35px rgba(234, 88, 12, 0.7);
       }
     }
 
-    /* Fun typing effect */
-    .fun-typing {
+    /* Efecto de escritura con fuego */
+    .fire-typing {
       overflow: hidden;
-      border-right: 3px solid #0EA5E9;
+      border-right: 3px solid #DC2626;
       white-space: nowrap;
       animation: typing 4s steps(50, end), blink-cursor 0.75s step-end infinite;
     }
@@ -252,18 +252,18 @@
     
     @keyframes blink-cursor {
       from, to { border-color: transparent; }
-      50% { border-color: #0EA5E9; }
+      50% { border-color: #DC2626; }
     }
 
-    /* Fun button effects */
-    .btn-shine {
-      background: linear-gradient(135deg, #0EA5E9, #22D3EE);
+    /* Efectos de botón con fuego */
+    .btn-fire {
+      background: linear-gradient(135deg, #DC2626, #EA580C);
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
     }
     
-    .btn-shine::before {
+    .btn-fire::before {
       content: '';
       position: absolute;
       top: 0;
@@ -274,26 +274,26 @@
       transition: left 0.5s;
     }
     
-    .btn-shine:hover::before {
+    .btn-fire:hover::before {
       left: 100%;
     }
     
-    .btn-shine:hover {
+    .btn-fire:hover {
       transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 15px 35px rgba(14, 165, 233, 0.4);
+      box-shadow: 0 15px 35px rgba(220, 38, 38, 0.4);
     }
 
-    /* Floating sparkles */
-    .sparkle {
+    /* Partículas de fuego flotantes */
+    .fire-particle {
       position: absolute;
       width: 4px;
       height: 4px;
-      background: #F3E8FF;
+      background: #FED7AA;
       border-radius: 50%;
-      animation: sparkleFloat 3s ease-in-out infinite;
+      animation: fireFloat 3s ease-in-out infinite;
     }
 
-    @keyframes sparkleFloat {
+    @keyframes fireFloat {
       0%, 100% { 
         transform: translateY(0px) rotate(0deg);
         opacity: 0.7;
@@ -304,122 +304,122 @@
       }
     }
 
-    /* Fun emoji animations */
-    .emoji-bounce {
-      animation: emojiBounce 1.5s ease-in-out infinite;
+    /* Animaciones de emoji con fuego */
+    .emoji-flame {
+      animation: emojiFlame 1.5s ease-in-out infinite;
     }
 
-    @keyframes emojiBounce {
+    @keyframes emojiFlame {
       0%, 100% { transform: scale(1) rotate(0deg); }
       25% { transform: scale(1.1) rotate(5deg); }
       75% { transform: scale(1.1) rotate(-5deg); }
     }
   </style>
 </head>
-<body class="bg-slate-900 text-white overflow-x-hidden">
+<body class="bg-gray-900 text-white overflow-x-hidden">
 
-  <!-- RAINBOW WAVE BACKGROUND -->
-  <div class="rainbow-wave fixed inset-0 pointer-events-none z-0"></div>
+  <!-- ONDAS DE FUEGO DE FONDO -->
+  <div class="fire-wave fixed inset-0 pointer-events-none z-0"></div>
 
-  <!-- SPARKLE HEADER -->
-  <header class="shine-bg min-h-screen flex items-center relative">
-    <div class="shine-content w-full">
+  <!-- HEADER CON FUEGO -->
+  <header class="fire-gradient min-h-screen flex items-center relative">
+    <div class="fire-content w-full">
       
-      <!-- Fun Navigation -->
-      <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-xl border-b-2 border-purple-600">
+      <!-- Navegación con nuevo diseño -->
+      <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-xl border-b-2 border-red-600">
         <div class="max-w-7xl mx-auto px-6 py-4">
           <div class="flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
-              <div class="shine-icon mr-4 pulse-purple">
-                <div class="text-white font-bold text-2xl emoji-bounce">✨</div>
+              <div class="fire-icon mr-4 pulse-fire">
+                <div class="text-white font-bold text-2xl emoji-flame">🔥</div>
               </div>
-              <span class="text-2xl font-black fredoka text-white-title">Elisalde Hnos</span>
+              <span class="text-2xl font-black oswald text-white-title">Elisalde Hnos</span>
             </div>
             
             <!-- Menu -->
-            <ul class="hidden md:flex space-x-8 text-purple-400 font-bold fredoka">
-              <li><a href="#inicio" class="hover:text-purple-600 transition duration-300 relative group">
+            <ul class="hidden md:flex space-x-8 text-red-400 font-bold oswald">
+              <li><a href="#inicio" class="hover:text-red-600 transition duration-300 relative group">
                   INICIO
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300"></span>
             </a></li>
-              <li><a href="#nosotros" class="hover:text-purple-600 transition duration-300 relative group">
-                  NOSOTROS
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all duration-300"></span>
-            </a></li>
-              <li><a href="#servicios" class="hover:text-purple-600 transition duration-300 relative group">
+              <li><a href="#servicios" class="hover:text-red-600 transition duration-300 relative group">
                   SERVICIOS
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300"></span>
             </a></li>
-              <li><a href="#contacto" class="hover:text-purple-600 transition duration-300 relative group">
+              <li><a href="#nosotros" class="hover:text-red-600 transition duration-300 relative group">
+                  NOSOTROS
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300"></span>
+            </a></li>
+              <li><a href="#contacto" class="hover:text-red-600 transition duration-300 relative group">
                   CONTACTO
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 group-hover:w-full transition-all duration-300"></span>
             </a></li>
           </ul>
           </div>
         </div>
       </nav>
 
-      <!-- Hero Section -->
+      <!-- Sección Hero - Nueva estructura -->
       <div class="max-w-7xl mx-auto px-6 py-20 mt-20">
         <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
           
-          <!-- Left Content -->
-            <div class="text-center lg:text-left">
+          <!-- Contenido Izquierdo -->
+          <div class="text-center lg:text-left">
             <div class="mb-8">
-              <h1 class="text-6xl md:text-7xl font-black fredoka bounce-animation mb-4">
+              <h1 class="text-6xl md:text-7xl font-black oswald flame-animation mb-4">
                 <span class="text-white-title">Elisalde</span>
                 <br>
                 <span class="text-white-title">Hnos</span>
               </h1>
-              <div class="fun-typing text-2xl md:text-3xl text-purple-400 font-bold">
-                SOLUCIONES ELÉCTRICAS Y SERVICIOS INTEGRALES
+              <div class="fire-typing text-2xl md:text-3xl text-red-400 font-bold">
+                SOLUCIONES ELÉCTRICAS PROFESIONALES
               </div>
-              </div>
+            </div>
               
-            <!-- Feature Stats -->
+            <!-- Estadísticas con nuevo diseño -->
             <div class="grid grid-cols-2 gap-6 mb-12">
-              <div class="shine-card p-6 rounded-xl">
-                <div class="text-4xl text-purple mb-2 fredoka font-black">✨</div>
+              <div class="fire-card p-6 rounded-xl">
+                <div class="text-4xl text-fire-red mb-2 oswald font-black">⚡</div>
                 <div class="text-gray-300">CALIDAD</div>
               </div>
-              <div class="shine-card p-6 rounded-xl">
-                <div class="text-4xl text-light-purple mb-2 fredoka font-black">🎉</div>
+              <div class="fire-card p-6 rounded-xl">
+                <div class="text-4xl text-fire-orange mb-2 oswald font-black">🚀</div>
                 <div class="text-gray-300">RAPIDEZ</div>
               </div>
-              <div class="shine-card p-6 rounded-xl">
-                <div class="text-4xl text-pink mb-2 fredoka font-black">💫</div>
+              <div class="fire-card p-6 rounded-xl">
+                <div class="text-4xl text-fire-yellow mb-2 oswald font-black">🛡️</div>
                 <div class="text-gray-300">SEGURIDAD</div>
               </div>
-              <div class="shine-card p-6 rounded-xl">
-                <div class="text-4xl text-purple mb-2 fredoka font-black">🌟</div>
+              <div class="fire-card p-6 rounded-xl">
+                <div class="text-4xl text-fire-red mb-2 oswald font-black">✅</div>
                 <div class="text-gray-300">GARANTÍA</div>
               </div>
             </div>
 
-            <!-- CTA Button -->
-            <button class="btn-shine px-12 py-6 rounded-xl text-xl font-bold fredoka text-white border-2 border-purple-600 transition-all duration-300">
-              PEDIR PRESUPUESTO
+            <!-- Botón CTA -->
+            <button class="btn-fire px-12 py-6 rounded-xl text-xl font-bold oswald text-white border-2 border-red-600 transition-all duration-300">
+              SOLICITAR PRESUPUESTO
             </button>
           </div>
 
-          <!-- Right Content - Fun Image -->
-            <div class="relative">
-            <div class="shine-card p-8 rounded-2xl">
+          <!-- Contenido Derecho - Nueva imagen -->
+          <div class="relative">
+            <div class="fire-card p-8 rounded-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1581091014534-7d96968bdd3e?q=80&w=2126&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop" 
                 alt="Elisalde Hnos - Servicios eléctricos" 
                 class="w-full h-96 object-cover rounded-lg"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-sky-600/20 via-transparent to-cyan-400/20 rounded-2xl"></div>
-              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-red-600/20 via-transparent to-orange-400/20 rounded-2xl"></div>
+            </div>
             
-            <!-- Floating sparkles -->
-            <div class="absolute -top-6 -right-6 shine-icon pulse-purple">
-              <div class="text-white font-bold text-xl emoji-bounce">✨</div>
-              </div>
-            <div class="absolute -bottom-6 -left-6 shine-icon pulse-purple" style="animation-delay: 1s;">
-              <div class="text-white font-bold text-xl emoji-bounce">🎨</div>
+            <!-- Partículas de fuego flotantes -->
+            <div class="absolute -top-6 -right-6 fire-icon pulse-fire">
+              <div class="text-white font-bold text-xl emoji-flame">🔥</div>
+            </div>
+            <div class="absolute -bottom-6 -left-6 fire-icon pulse-fire" style="animation-delay: 1s;">
+              <div class="text-white font-bold text-xl emoji-flame">⚡</div>
             </div>
           </div>
         </div>
@@ -427,237 +427,237 @@
     </div>
   </header>
 
-  <!-- ABOUT SECTION - FUN GRID DESIGN -->
-  <section id="nosotros" class="sparkle-bg py-32 bg-slate-800 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-20">
-        <h2 class="text-6xl font-black fredoka text-purple bounce-animation mb-8">QUIÉNES SOMOS</h2>
-        <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto"></div>
-      </div>
-      
-      <!-- Fun panels layout -->
-      <div class="grid lg:grid-cols-3 gap-8">
-        
-        <!-- Panel 1 -->
-        <div class="fun-panel p-8 rounded-xl">
-          <div class="shine-icon mb-6 mx-auto">
-            <div class="text-white font-bold text-2xl emoji-bounce">🎯</div>
-          </div>
-          <h3 class="text-2xl font-bold fredoka text-purple mb-4">MISIÓN</h3>
-          <p class="text-gray-300">Brindar soluciones eléctricas confiables y seguras para hogares y empresas, con compromiso, rapidez y calidad profesional.</p>
-        </div>
-        
-        <!-- Panel 2 -->
-        <div class="fun-panel p-8 rounded-xl">
-          <div class="shine-icon mb-6 mx-auto">
-            <div class="text-white font-bold text-2xl emoji-bounce">🌈</div>
-            </div>
-          <h3 class="text-2xl font-bold fredoka text-light-purple mb-4">VISIÓN</h3>
-          <p class="text-gray-300">Ser referentes regionales en instalaciones y mantenimiento eléctrico, priorizando seguridad, innovación y atención al cliente.</p>
-        </div>
-
-        <!-- Panel 3 -->
-        <div class="fun-panel p-8 rounded-xl">
-          <div class="shine-icon mb-6 mx-auto">
-            <div class="text-white font-bold text-2xl emoji-bounce">💎</div>
-          </div>
-          <h3 class="text-2xl font-bold fredoka text-pink mb-4">VALORES</h3>
-          <p class="text-gray-300">Seguridad, responsabilidad, transparencia y garantía en cada trabajo realizado.</p>
-        </div>
-      </div>
-      
-      <!-- Central Image -->
-      <div class="flex justify-center mt-16">
-        <div class="shine-card p-6 rounded-2xl">
-          <img 
-            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" 
-            alt="Elisalde Hnos - Equipo técnico" 
-            class="w-full max-w-2xl h-64 object-cover rounded-lg"
-          />
-        </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- SERVICES SECTION - FUN GRID DESIGN -->
-  <section id="servicios" class="bg-slate-900 py-32 relative">
+  <!-- SECCIÓN DE SERVICIOS - NUEVA ESTRUCTURA PRIMERA -->
+  <section id="servicios" class="bg-gray-800 py-32 relative">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-20">
-        <h2 class="text-6xl font-black fredoka text-purple bounce-animation mb-8">NUESTROS SERVICIOS</h2>
-        <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto"></div>
+        <h2 class="text-6xl font-black oswald text-fire-red flame-animation mb-8">NUESTROS SERVICIOS</h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto"></div>
       </div>
       
-      <!-- Fun Grid -->
+      <!-- Nueva cuadrícula de servicios -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Service 1 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">🎨</div>
-            </div>
-            <img 
-            src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=2070&auto=format&fit=crop" 
+        <!-- Servicio 1 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">🏠</div>
+          </div>
+          <img 
+            src="https://images.unsplash.com/photo-1581091014534-7d96968bdd3e?q=80&w=2126&auto=format&fit=crop" 
             alt="Instalaciones eléctricas domiciliarias" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-purple mb-4">INSTALACIONES DOMICILIARIAS</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-red mb-4">INSTALACIONES DOMICILIARIAS</h3>
           <p class="text-gray-300 mb-4">Proyectos y ejecución de instalaciones eléctricas conforme normas, tableros, cableado y puesta a tierra.</p>
-          <div class="flex items-center text-purple-400">
-            <span class="mr-2">✨</span>
-            <span class="text-sm font-bold">CREATIVIDAD SIN LÍMITES</span>
+          <div class="flex items-center text-red-400">
+            <span class="mr-2">⚡</span>
+            <span class="text-sm font-bold">CALIDAD GARANTIZADA</span>
           </div>
-          </div>
+        </div>
         
-        <!-- Service 2 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">🎉</div>
+        <!-- Servicio 2 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">🔧</div>
           </div>
           <img 
             src="https://images.unsplash.com/photo-1581091215367-59ab6d1f3d6b?q=80&w=2070&auto=format&fit=crop" 
             alt="Mantenimiento eléctrico" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-light-purple mb-4">MANTENIMIENTO</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-orange mb-4">MANTENIMIENTO</h3>
           <p class="text-gray-300 mb-4">Correctivo y preventivo para evitar fallas, con diagnóstico rápido y repuestos garantizados.</p>
-          <div class="flex items-center text-purple-500">
-            <span class="mr-2">🎊</span>
-            <span class="text-sm font-bold">MOMENTOS INOLVIDABLES</span>
+          <div class="flex items-center text-orange-400">
+            <span class="mr-2">🚀</span>
+            <span class="text-sm font-bold">RÁPIDO Y EFICIENTE</span>
           </div>
-      </div>
-      
-        <!-- Service 3 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">💫</div>
+        </div>
+        
+        <!-- Servicio 3 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">💡</div>
           </div>
           <img 
             src="https://images.unsplash.com/photo-1581093588401-8a5b0591754c?q=80&w=2070&auto=format&fit=crop" 
             alt="Iluminación LED" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-pink mb-4">ILUMINACIÓN LED</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-yellow mb-4">ILUMINACIÓN LED</h3>
           <p class="text-gray-300 mb-4">Diseño y montaje de iluminación eficiente para hogares, comercios y exteriores.</p>
-          <div class="flex items-center text-purple-400">
-            <span class="mr-2">🌟</span>
-            <span class="text-sm font-bold">ESTILO PERSONALIZADO</span>
+          <div class="flex items-center text-yellow-400">
+            <span class="mr-2">💡</span>
+            <span class="text-sm font-bold">EFICIENCIA ENERGÉTICA</span>
           </div>
-          </div>
-          
-        <!-- Service 4 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">🎭</div>
+        </div>
+        
+        <!-- Servicio 4 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">⚡</div>
           </div>
           <img 
             src="https://images.unsplash.com/photo-1581092917398-4c4c8469a8df?q=80&w=2134&auto=format&fit=crop" 
             alt="Tableros y protecciones" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-purple mb-4">TABLEROS Y PROTECCIONES</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-red mb-4">TABLEROS Y PROTECCIONES</h3>
           <p class="text-gray-300 mb-4">Armado y adecuación de tableros, disyuntores, térmicas y protecciones contra sobretensión.</p>
-          <div class="flex items-center text-purple-400">
-            <span class="mr-2">🎨</span>
-            <span class="text-sm font-bold">APRENDER DIVIRTIÉNDOSE</span>
+          <div class="flex items-center text-red-400">
+            <span class="mr-2">🛡️</span>
+            <span class="text-sm font-bold">MÁXIMA SEGURIDAD</span>
           </div>
-          </div>
-          
-        <!-- Service 5 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">📸</div>
+        </div>
+        
+        <!-- Servicio 5 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">📹</div>
           </div>
           <img 
             src="https://images.unsplash.com/photo-1581092160562-40aa08e78838?q=80&w=2015&auto=format&fit=crop" 
             alt="Cableado de datos y cámaras" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-light-purple mb-4">DATOS Y CCTV</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-orange mb-4">DATOS Y CCTV</h3>
           <p class="text-gray-300 mb-4">Tendido de cableado estructurado, canalizaciones y colocación de cámaras de seguridad.</p>
-          <div class="flex items-center text-purple-500">
-            <span class="mr-2">📷</span>
-            <span class="text-sm font-bold">RECUERDOS ÚNICOS</span>
+          <div class="flex items-center text-orange-400">
+            <span class="mr-2">📹</span>
+            <span class="text-sm font-bold">TECNOLOGÍA AVANZADA</span>
           </div>
-          </div>
-          
-        <!-- Service 6 -->
-        <div class="shine-card p-8 rounded-2xl group">
-          <div class="shine-icon mb-6">
-            <div class="text-white font-bold text-xl emoji-bounce">🎁</div>
+        </div>
+        
+        <!-- Servicio 6 -->
+        <div class="fire-card p-8 rounded-2xl group">
+          <div class="fire-icon mb-6">
+            <div class="text-white font-bold text-xl emoji-flame">📊</div>
           </div>
           <img 
             src="https://images.unsplash.com/photo-1581090700227-1a9c9f1b1f6d?q=80&w=2070&auto=format&fit=crop" 
             alt="Mediciones y certificaciones" 
             class="w-full h-48 object-cover rounded-lg mb-6"
           />
-          <h3 class="text-2xl font-bold fredoka text-pink mb-4">MEDICIONES</h3>
+          <h3 class="text-2xl font-bold oswald text-fire-yellow mb-4">MEDICIONES</h3>
           <p class="text-gray-300 mb-4">Mediciones de aislamiento, continuidad, puesta a tierra y emisión de informes.</p>
-          <div class="flex items-center text-purple-400">
-            <span class="mr-2">💎</span>
-            <span class="text-sm font-bold">PRODUCTOS ÚNICOS</span>
-          </div>
+          <div class="flex items-center text-yellow-400">
+            <span class="mr-2">📊</span>
+            <span class="text-sm font-bold">PRECISIÓN TÉCNICA</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  <!-- TESTIMONIALS - FUN DESIGN -->
-  <section class="shine-bg py-32 relative">
-      <div class="max-w-7xl mx-auto px-6">
+  <!-- SECCIÓN NOSOTROS - NUEVA ESTRUCTURA -->
+  <section id="nosotros" class="flame-bg py-32 bg-gray-900 relative">
+    <div class="max-w-7xl mx-auto px-6">
       <div class="text-center mb-20">
-        <h2 class="text-6xl font-black fredoka text-light-purple bounce-animation mb-8">OPINIONES DE CLIENTES</h2>
-        <div class="w-32 h-1 bg-gradient-to-r from-purple-400 to-purple-600 mx-auto"></div>
-            </div>
+        <h2 class="text-6xl font-black oswald text-fire-orange flame-animation mb-8">QUIÉNES SOMOS</h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto"></div>
+      </div>
       
-      <!-- Fun testimonials -->
+      <!-- Nueva disposición de paneles -->
+      <div class="grid lg:grid-cols-3 gap-8">
+        
+        <!-- Panel 1 -->
+        <div class="flame-panel p-8 rounded-xl">
+          <div class="fire-icon mb-6 mx-auto">
+            <div class="text-white font-bold text-2xl emoji-flame">🎯</div>
+          </div>
+          <h3 class="text-2xl font-bold oswald text-fire-red mb-4">MISIÓN</h3>
+          <p class="text-gray-300">Brindar soluciones eléctricas confiables y seguras para hogares y empresas, con compromiso, rapidez y calidad profesional.</p>
+        </div>
+        
+        <!-- Panel 2 -->
+        <div class="flame-panel p-8 rounded-xl">
+          <div class="fire-icon mb-6 mx-auto">
+            <div class="text-white font-bold text-2xl emoji-flame">🌟</div>
+          </div>
+          <h3 class="text-2xl font-bold oswald text-fire-orange mb-4">VISIÓN</h3>
+          <p class="text-gray-300">Ser referentes regionales en instalaciones y mantenimiento eléctrico, priorizando seguridad, innovación y atención al cliente.</p>
+        </div>
+
+        <!-- Panel 3 -->
+        <div class="flame-panel p-8 rounded-xl">
+          <div class="fire-icon mb-6 mx-auto">
+            <div class="text-white font-bold text-2xl emoji-flame">💎</div>
+          </div>
+          <h3 class="text-2xl font-bold oswald text-fire-yellow mb-4">VALORES</h3>
+          <p class="text-gray-300">Seguridad, responsabilidad, transparencia y garantía en cada trabajo realizado.</p>
+        </div>
+      </div>
+      
+      <!-- Imagen central -->
+      <div class="flex justify-center mt-16">
+        <div class="fire-card p-6 rounded-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" 
+            alt="Elisalde Hnos - Equipo técnico" 
+            class="w-full max-w-2xl h-64 object-cover rounded-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS - NUEVO DISEÑO -->
+  <section class="fire-gradient py-32 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="text-6xl font-black oswald text-white-title flame-animation mb-8">OPINIONES DE CLIENTES</h2>
+        <div class="w-32 h-1 bg-gradient-to-r from-white to-orange-200 mx-auto"></div>
+      </div>
+      
+      <!-- Testimonios con nuevo diseño -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <div class="shine-card p-8 rounded-2xl">
-              <div class="flex items-center mb-6">
-                <img 
-              class="w-16 h-16 rounded-full border-4 border-purple-400 mr-4" 
+        <div class="fire-card p-8 rounded-2xl">
+          <div class="flex items-center mb-6">
+            <img 
+              class="w-16 h-16 rounded-full border-4 border-red-400 mr-4" 
               src="https://randomuser.me/api/portraits/women/32.jpg" 
               alt="Sofía Martínez"
             />
             <div>
-              <h4 class="font-bold fredoka text-purple text-lg">Sofía Martínez</h4>
-              <p class="text-purple-400 text-sm">Cliente Feliz</p>
-                </div>
-              </div>
-          <p class="text-gray-300 italic">"Trabajo impecable, rápido y seguro. Recomiendo a Elisalde Hnos para instalaciones y mantenimiento."</p>
-              <div class="flex mt-4">
-            <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-              </div>
+              <h4 class="font-bold oswald text-fire-red text-lg">Sofía Martínez</h4>
+              <p class="text-red-400 text-sm">Cliente Satisfecha</p>
             </div>
+          </div>
+          <p class="text-gray-300 italic">"Trabajo impecable, rápido y seguro. Recomiendo a Elisalde Hnos para instalaciones y mantenimiento."</p>
+          <div class="flex mt-4">
+            <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
 
-        <div class="shine-card p-8 rounded-2xl">
-              <div class="flex items-center mb-6">
-                <img 
-              class="w-16 h-16 rounded-full border-4 border-pink-400 mr-4" 
+        <div class="fire-card p-8 rounded-2xl">
+          <div class="flex items-center mb-6">
+            <img 
+              class="w-16 h-16 rounded-full border-4 border-orange-400 mr-4" 
               src="https://randomuser.me/api/portraits/men/42.jpg" 
               alt="Diego Rodríguez"
             />
             <div>
-              <h4 class="font-bold fredoka text-light-purple text-lg">Diego Rodríguez</h4>
-              <p class="text-purple-400 text-sm">Cliente Satisfecho</p>
-                </div>
-              </div>
-          <p class="text-gray-300 italic">"Excelente atención y resultados. Dejaron todo funcionando perfecto y ordenado."</p>
-              <div class="flex mt-4">
-            <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-              </div>
+              <h4 class="font-bold oswald text-fire-orange text-lg">Diego Rodríguez</h4>
+              <p class="text-orange-400 text-sm">Cliente Feliz</p>
             </div>
+          </div>
+          <p class="text-gray-300 italic">"Excelente atención y resultados. Dejaron todo funcionando perfecto y ordenado."</p>
+          <div class="flex mt-4">
+            <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
 
-        <div class="shine-card p-8 rounded-2xl">
-              <div class="flex items-center mb-6">
-                <img 
-              class="w-16 h-16 rounded-full border-4 border-purple-500 mr-4" 
+        <div class="fire-card p-8 rounded-2xl">
+          <div class="flex items-center mb-6">
+            <img 
+              class="w-16 h-16 rounded-full border-4 border-yellow-400 mr-4" 
               src="https://randomuser.me/api/portraits/women/24.jpg" 
               alt="Lucía Fernández"
             />
             <div>
-              <h4 class="font-bold fredoka text-pink text-lg">Lucía Fernández</h4>
-              <p class="text-purple-400 text-sm">Cliente Encantada</p>
+              <h4 class="font-bold oswald text-fire-yellow text-lg">Lucía Fernández</h4>
+              <p class="text-yellow-400 text-sm">Cliente Encantada</p>
             </div>
           </div>
           <p class="text-gray-300 italic">"Muy profesionales. Explicaron cada paso y cumplieron con los tiempos."</p>
@@ -666,111 +666,111 @@
           </div>
         </div>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-  <!-- CONTACT FOOTER - FUN DESIGN -->
-  <footer id="contacto" class="bg-slate-900 text-white py-20 border-t-2 border-purple-600">
+  <!-- FOOTER DE CONTACTO - NUEVA ESTRUCTURA -->
+  <footer id="contacto" class="bg-gray-900 text-white py-20 border-t-2 border-red-600">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-12 mb-16">
         
-        <!-- Company Info -->
+        <!-- Información de la empresa -->
         <div class="md:col-span-1">
           <div class="flex items-center mb-8">
-            <div class="shine-icon mr-4 pulse-purple">
-              <div class="text-white font-bold text-xl emoji-bounce">✨</div>
+            <div class="fire-icon mr-4 pulse-fire">
+              <div class="text-white font-bold text-xl emoji-flame">🔥</div>
             </div>
-            <h3 class="text-4xl font-bold fredoka text-white-title">Elisalde Hnos</h3>
+            <h3 class="text-4xl font-bold oswald text-white-title">Elisalde Hnos</h3>
           </div>
           <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-Servicios eléctricos y mantenimiento integral para hogares y comercios. Trabajos seguros, rápidos y con garantía.
+            Servicios eléctricos y mantenimiento integral para hogares y comercios. Trabajos seguros, rápidos y con garantía.
           </p>
           <div class="flex space-x-4">
-            <div class="w-12 h-12 shine-card rounded-full flex items-center justify-center">
-              <span class="text-purple-400 emoji-bounce">✨</span>
+            <div class="w-12 h-12 fire-card rounded-full flex items-center justify-center">
+              <span class="text-red-400 emoji-flame">⚡</span>
             </div>
-            <div class="w-12 h-12 shine-card rounded-full flex items-center justify-center">
-              <span class="text-purple-500 emoji-bounce">🎨</span>
+            <div class="w-12 h-12 fire-card rounded-full flex items-center justify-center">
+              <span class="text-orange-400 emoji-flame">🔧</span>
             </div>
-            <div class="w-12 h-12 shine-card rounded-full flex items-center justify-center">
-              <span class="text-purple-600 emoji-bounce">🎉</span>
+            <div class="w-12 h-12 fire-card rounded-full flex items-center justify-center">
+              <span class="text-yellow-400 emoji-flame">💡</span>
             </div>
           </div>
         </div>
         
-        <!-- Contact Info -->
+        <!-- Información de contacto -->
         <div>
-          <h4 class="text-2xl font-bold fredoka text-light-purple mb-8">CONTACTO DIRECTO</h4>
+          <h4 class="text-2xl font-bold oswald text-fire-orange mb-8">INFORMACIÓN DE CONTACTO</h4>
           <div class="space-y-6 text-gray-300">
             <div class="flex items-start space-x-4">
-              <div class="shine-icon">
+              <div class="fire-icon">
                 <div class="text-white text-sm">📍</div>
               </div>
-              <span>Italia 973, San Miguel</span>
+              <span>Jujuy 1452, Mar De Ajo</span>
             </div>
             <div class="flex items-center space-x-4">
-              <div class="shine-icon">
+              <div class="fire-icon">
                 <div class="text-white text-sm">📞</div>
               </div>
-              <a href="tel:+5491164655167" class="hover:text-purple-400 transition text-lg font-bold fredoka">+5491164655167</a>
+              <a href="tel:+5491164652031" class="hover:text-red-400 transition text-lg font-bold oswald">+5491164652031</a>
             </div>
             <div class="flex items-center space-x-4">
-              <div class="shine-icon">
+              <div class="fire-icon">
                 <div class="text-white text-sm">✉️</div>
               </div>
-              <a href="mailto:contacto@elisaldehnos.com" class="hover:text-purple-400 transition">contacto@elisaldehnos.com</a>
+              <a href="mailto:contacto@elisaldehnos.com" class="hover:text-red-400 transition">contacto@elisaldehnos.com</a>
             </div>
             <div class="flex items-center space-x-4">
-              <div class="shine-icon">
+              <div class="fire-icon">
                 <div class="text-white text-sm">🏢</div>
               </div>
-              <span>CUIL: 20381244602</span>
+              <span>CUIL: 20442430676</span>
             </div>
           </div>
         </div>
         
-        <!-- Operating Hours -->
+        <!-- Horarios de atención -->
         <div>
-          <h4 class="text-2xl font-bold fredoka text-purple-400 mb-8">HORARIOS DE ATENCIÓN</h4>
+          <h4 class="text-2xl font-bold oswald text-red-400 mb-8">HORARIOS DE ATENCIÓN</h4>
           <div class="space-y-4 text-gray-300">
-            <div class="shine-card p-4 rounded-lg">
-              <p class="font-bold text-purple-400 mb-2 fredoka">OFICINA</p>
+            <div class="fire-card p-4 rounded-lg">
+              <p class="font-bold text-red-400 mb-2 oswald">OFICINA</p>
               <p>Lun-Vie: 09:00-18:00</p>
               <p>Sáb: 10:00-14:00</p>
             </div>
-            <div class="shine-card p-4 rounded-lg">
-              <p class="font-bold text-purple-500 mb-2 fredoka">EVENTOS</p>
+            <div class="fire-card p-4 rounded-lg">
+              <p class="font-bold text-orange-400 mb-2 oswald">EMERGENCIAS</p>
               <p>Disponible 24/7</p>
-              <p>Para momentos especiales</p>
+              <p>Para urgencias eléctricas</p>
             </div>
           </div>
         </div>
       </div>
       
-      <div class="border-t-2 border-purple-600 pt-12 text-center">
-        <div class="shine-icon mx-auto mb-6 pulse-purple">
-          <div class="text-white font-bold text-xl emoji-bounce">✨</div>
+      <div class="border-t-2 border-red-600 pt-12 text-center">
+        <div class="fire-icon mx-auto mb-6 pulse-fire">
+          <div class="text-white font-bold text-xl emoji-flame">🔥</div>
         </div>
-        <p class="text-purple-400 mb-3 text-xl font-bold fredoka">Elisalde Hnos - Soluciones Eléctricas</p>
-        <p class="text-gray-400">© 2024 Todos los derechos reservados | Crea momentos mágicos</p>
+        <p class="text-red-400 mb-3 text-xl font-bold oswald">Elisalde Hnos - Soluciones Eléctricas</p>
+        <p class="text-gray-400">© 2024 Todos los derechos reservados | Servicios eléctricos profesionales</p>
       </div>
     </div>
   </footer>
 
-  <!-- FUN WHATSAPP BUTTON -->
+  <!-- BOTÓN DE WHATSAPP CON FUEGO -->
   <a 
-    href="https://wa.me/5491164655167?text=¡Hola%20Elisalde%20Hnos!%20Me%20gustaría%20pedir%20un%20presupuesto%20para%20un%20trabajo%20eléctrico." 
+    href="https://wa.me/5491164652031?text=¡Hola%20Elisalde%20Hnos!%20Me%20gustaría%20pedir%20un%20presupuesto%20para%20un%20trabajo%20eléctrico." 
     target="_blank"
-    class="fixed bottom-8 right-8 whatsapp-sparkle text-white p-6 rounded-full shadow-2xl z-50 transition-all duration-300 hover:scale-110 group"
+    class="fixed bottom-8 right-8 whatsapp-fire text-white p-6 rounded-full shadow-2xl z-50 transition-all duration-300 hover:scale-110 group"
     aria-label="Contactar por WhatsApp"
   >
     <div class="relative">
       <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
       </svg>
-      <!-- Fun notification -->
-      <div class="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-xs font-bold pulse-purple">
-        ✨
+      <!-- Notificación de fuego -->
+      <div class="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-red-400 to-red-600 rounded-full flex items-center justify-center text-xs font-bold pulse-fire">
+        🔥
       </div>
     </div>
   </a>
